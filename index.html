@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- determina que el hancho de la pantalla es el mismo que el html -->
+		<meta charset="UTF-8" /> <!-- identifica que la pag esta en español -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>practica1</title>
+		<link rel="stylesheet" href="index.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Ojuju:wght@200..800&display=swap"
+			rel="stylesheet" />
+	</head>
+	<body>
+		<!-- barra de navegacion -->
+		<nav id="nav-bar">
+			<div id="nav-bar-container">
+				<!-- esto es para los titulos va de h1 hasta h6 -->
+				<h2 id="nav-bar-logo">todoApp</h2>
+				<!-- siempre usar para iconos formato svg para evitar deformacion por pixel -->
+				<svg  
+					xmlns="http://www.w3.org/2000/svg"
+					fill="none"
+					viewBox="0 0 24 24"
+					stroke-width="1.5"
+					stroke="currentColor"
+					id="nav-bar-menu-btn">
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+				</svg>
+
+				<div id="nav-bar-container-link"> 
+                  <a class="link" href="/">home</a>  <!-- carga la pag reemplazando la actual -->
+                  <a class="link" href="/APP/" target="_blank" rel="noopener noreferrer">APP</a> <!-- carga otra pestaña -->
+				</div>
+			</div>
+		</nav>
+		<main id="main-container">
+			<h1 id="main-title"> <span>Todo</span> App</h1>
+			<div id="main-description-container">
+				<p id="main-des-text">
+					Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+					Tempore nisi dolorum provident obcaecati expedita, 
+					vel quasi voluptatibus,
+					 adipisci reiciendis dolor voluptatem dicta soluta ea illo 
+					 corporis saepe
+					  ratione. Sapiente, at?</p>
+				 <a id="main-desc-btn" href="APP/">comenzar</a> 
+			</div>
+		</main>
+	</body>
+</html>

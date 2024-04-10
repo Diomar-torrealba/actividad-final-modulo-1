@@ -1,0 +1,141 @@
+*,
+::before, 
+::after {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: #e5eaeb;
+}
+
+body {
+	font-family: "Ojujú", "sans-serif";
+	margin: 0;
+	/* parte interna del cuerpo de la caja  */
+	padding-top: 5rem;
+	height: 100vh;
+}
+/* nav-bar */
+#nav-bar-menu-btn {
+	/* aqui se asigna cada caraacteristica del id selecccionado */
+	color: rgb(18, 2, 2);
+	width: 2rem; /*ancho  */
+	height: 2rem; /* alto */
+	border: 2px solid rgb(18, 2, 2);  /* para bordear el menu tambien se puede usar   */
+	border-radius: 0.5rem; /*  se declaran las dimenciones del borde  */
+	padding: 0.25rem; /* parte interna de la caja  */
+}
+
+#nav-bar-logo {
+	margin: 0;
+	color: rgb(18, 2, 2);
+}
+ /* caja padre, menu, logo,   */
+#nav-bar {
+	background-color: rgb(57, 70, 212);
+	height: 5rem;
+	padding: 0 1rem;
+	position: fixed; /* para fijar el navegador  */
+	/* declara la posicion de la  caja  */
+	top: 0;
+	left: 0;
+	right: 0;
+}
+#nav-bar-container {
+	height: 5rem; /* cambia el color de todo lo de atras  */
+	background-color: rgb(57, 70, 212); /* maximo ancho que puede tomar  */
+	max-width: 80rem; /* margen automatio que divide el espacio y  lo mantiene */
+	margin: 0 auto; /* solo se usa en el elemento padre de la caja  */
+	/* llamar primero antes de usar a jutify y alin  */
+	display: flex;
+	justify-content: space-between; /* mueve x y y del contenido de la caja */
+	align-items: center;
+}
+#nav-bar-container-link{
+	display :none; /* oculta los links  */
+	gap: 2rem; /* para separar  */
+}
+
+/* se asignan caracteristicas estaticas  */
+.link{
+color: white;	 
+text-decoration: none;
+}
+/* todo lo que este dentro de hover cambia al pasar el mouse   */
+.link:hover{
+text-decoration: underline;
+color: red;
+}
+
+/* contenedor del titulo, descripcion y boton   */
+#main-container{
+height: 100%; /* en el aso de altura el porcentaje solo funciona cuando el elemento padre tiene altura    */
+display:flex ; 
+flex-direction: column; /* organiza los elementos en columna  */
+justify-content: center;/* centro los elementos en la pag eje  x  */
+align-items: center;
+gap: 1rem;
+padding: 0 1rem;
+max-width: 80rem;
+margin: 0 auto;
+}
+#main-title{
+	margin: 0;
+}
+
+#main-title > span {
+color: blueviolet;
+}
+#main-description-container {
+display: flex;
+flex-direction: column;
+gap: 1rem;
+justify-content: center;
+align-items: center;
+}
+
+#main-des-text {
+margin: 0;
+text-align: justify;
+}
+
+#main-desc-btn {
+
+background-color: red;
+padding: 0.5rem 1rem;
+text-align: center;
+text-decoration: none;
+color: white;
+border-radius: 0.5rem;
+width: 50%;
+
+}
+/* declara un limite de pixel para que el icono de menu sea visible  */
+@media (min-width: 768px) {
+	#nav-bar-menu-btn {
+		display :none;
+	}
+	#nav-bar-container-link{
+		display :flex; /* modifica la caja  */
+	}
+	#main-container {
+	flex-direction: row;
+	width: 70%;
+	}
+	  #main-title {
+	font-size: 4rem;
+	  }
+}
+@media (min-width: 1024px) {
+	#main-container {
+	  flex-direction: row;
+	  width: 80%;
+	}
+  
+	#main-title {
+	  font-size: 6rem;
+	}
+
+	#main-description-container{
+		width: 50%;
+	}
+  }

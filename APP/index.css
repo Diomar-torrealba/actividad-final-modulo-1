@@ -1,0 +1,258 @@
+*,
+::before, 
+::after {
+	box-sizing: border-box;
+	border-width: 0;
+	border-style: solid;
+	border-color: #e5eaeb;
+  
+  
+}
+::-webkit-scrollbar {
+  display: none;
+}
+input{
+  border-radius: 0.5rem;
+  width: 86%;
+  height: 50%;
+  padding: 0;
+  font-size: 60%;
+}
+ul {
+    min-height: 5rem;
+    max-height: 10rem;
+    list-style: none;
+    overflow: auto;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    width: 100%;
+    background-color: #e5eaeb;
+  }
+  body{
+    background-color: black;
+  }
+  li{
+    display: flex;
+    justify-content: center;
+    padding-right: 0rem;
+    padding-left: 0rem;
+    padding-block-end: 0.06rem;
+    width: 100%;
+    max-width: 80rem;
+  }
+  form {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap-reverse;
+    align-content: center;
+    align-items: center;
+  }
+
+#Titulo-logo{
+    color: #e5eaeb;
+    text-align: center;
+    font-family: "Madimi One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 249%;  
+    margin-top: auto; 
+}
+#contenedor{
+  background-color: #020617;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 40rem;
+}  
+#contenedor-caja-cuerpo{
+   background-color:#18181b;
+    max-width: 80rem;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    width: 82%;
+    height: 21%;
+    gap: 0.8rem;
+}
+#contenedor-caja-cuerpo-barraeicono{
+display: flex;
+width: 100%;
+align-content: center;
+flex-wrap: wrap-reverse;
+height: 27%;
+justify-content: center;
+
+}
+#boton-menu{
+    color: blueviolet;
+    width: 10%;
+    height: 151%;
+	border: 2px solid #18181b;  
+	border-radius: 0.5rem; 
+	padding: 0rem; 
+  
+  background-color: #18181b;
+  margin-top: auto;
+}
+#botonverde{
+  background-color: #3f6212;
+  padding: 0rem 0rem;
+  width:  9%;
+  margin-left: 0.08rem;
+}
+#botonverde:hover{
+  background-color:#65a30d;
+}
+#botonrojo{
+  background-color: #991b1b;
+  padding: 0rem 0rem;
+  width: 9%;
+  margin-right: 0.08rem;
+  color: #e5eaeb;
+}
+#botonrojo:hover{
+  background-color:#dc2626;
+}
+#textomedio{
+  font-size: 65%;
+  background-color: #18181b;
+  color: white;
+  margin: 0rem;
+  width: 81%;
+  display: flex;
+  align-content: center;
+  flex-wrap: wrap;
+  max-width: 81%;
+
+}
+#contenedor-caja-cuerpo-tres-ultimos-botones {
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    background-color: #18181b;
+    HEIGHT: 34%;
+    display: flex;
+    align-content: center;
+}
+#boton-total {
+border-radius:0.5rem;
+background-color: blueviolet;
+color: white;
+text-align: center;
+font-size: 53%;
+margin-right: 8px;
+width: 26%;
+padding: 0rem;
+height: 60%;
+
+}
+#boton-completadas{
+  border-radius:0.5rem;
+  background-color: rgb(43, 226, 58);
+  color: white;
+  text-align: center;
+  font-size: 53%;
+  width: 26%;
+  padding: 0rem;
+  height: 60%;
+}
+#boton-incompletas{
+  border-radius:0.5rem;
+  background-color: rgb(226, 43, 52);
+  color: white;
+  text-align: center;
+  font-size: 53%;
+  margin-left: 8px;
+  width: 26%;
+  padding: 0rem;
+  height: 60%;
+  
+}
+@media (min-width: 768px){
+  #contenedor{
+    height: 53rem;
+  }
+  input{
+    height: 86%;
+     font-size:74%;
+  }
+  #contenedor-caja-cuerpo{
+   display: flex; 
+   flex-direction: column;
+	 width: 60%;
+   height: 27%;
+   font-size: 19px;
+  }
+  #boton-menu{
+      height: 158%;
+  }
+  li {
+    height: 22%;
+  }
+  ul{
+    height: 69%;
+    font-size: 131%;
+  }
+  form {
+    width: 97%;
+    height: 42%;
+}
+
+#Titulo-logo{
+font-size:325%; ;
+margin-top: auto;
+}
+}
+@media (min-width: 1024px) {
+  #contenedor{
+    height: 80rem;
+  }
+  input{
+  font-size: 9%;
+  }
+#boton-menu{
+      height: 230%;
+  }
+  #Titulo-logo{
+    font-size:531%; ;
+    margin-top: auto;
+    }
+	#contenedor-caja-cuerpo {
+	  flex-direction:column ;
+	  width: 81%;
+    height: 23%;
+    font-size: 322px;
+	}
+  ul {
+    display: flex;
+    flex-direction:column ;
+    width: 100%;
+    font-size: 10%;
+   background-color: #e5eaeb;
+  }
+  li {
+    height: 22%;
+    width: 101%;
+    }
+  ul{
+    height: 69%;
+  }
+  form {
+    width: 97%;
+    height: 42%;
+}#textomedio{
+  font-size: 94%;
+  width: 82%;
+}#botonrojo{
+
+font-size: 72%;;
+}
+#botonverde{
+  font-size: 72%;;
+}
+}
+  
+
